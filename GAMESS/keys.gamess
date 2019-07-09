@@ -1,16 +1,14 @@
-! SELECT RESTRICTED HARTREE-FOCK AS DEFAULT 
- $contrl scftyp=rhf $end
+! SELECT: scftyp=rhf $end                        
 
 ! THEORY: HF OR DFT
- $contrl mplevl=0 $end
+ $contrl dfttyp=B3LYP $end                
 
- $system timlim=10000 mwords=20 $end
- $SCF DIRSCF=.TRUE. $end
+
+ $system timlim=10000 mwords=20 $end 
+ $SCF DIRSCF=.TRUE. $end 
 
 ! BASIS SETS
-! KTZVP
- $contrl ISPHER=1 $END
- $BASIS GBASIS=KTZVP $END
+ $BASIS  GBASIS=N31 NGAUSS=6 $END         
 
 ! One of the following
  $guess guess=HUCKEL $end
