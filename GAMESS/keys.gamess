@@ -8,7 +8,7 @@
  $SCF DIRSCF=.TRUE. $end 
 
 ! BASIS SETS
- $BASIS  GBASIS=N31 NGAUSS=6 $END         
+ $BASIS  GBASIS=N31 NGAUSS=6 ndfunc=2 npfunc=1 $END         
 
 ! One of the following
  $guess guess=HUCKEL $end
