@@ -1,24 +1,18 @@
-! SELECT: scftyp=rhf $end                        
+ SELECT RESTRICTED HARTREE-FOCK AS DEFAULT
+ $contrl scftyp=rhf dfttyp=B3LYP maxit=200 $end
+ $contrl runtyp=OPTIMIZE maxit=200 $end
 
-! THEORY: HF OR DFT
- $contrl dfttyp=B3LYP $end                
-
-
- $system timlim=10000 mwords=20 $end 
- $SCF DIRSCF=.TRUE. $end 
+ $system timlim=10000 mwords=20 $end
+ $SCF DIRSCF=.TRUE. $end
 
 ! BASIS SETS
- $BASIS  GBASIS=N31 NGAUSS=6 ndfunc=2 npfunc=1 $END         
-
+! KTZVP
+ $BASIS GBASIS=N31 NGAUSS=6 $END
 ! One of the following
  $guess guess=HUCKEL $end
 
  $statpt projct=.FALSE. $end
  $STATPT IFREEZ(1)=1,2,3 $END
-
-! Optimize the geometry with COSMO effects
- $statpt opttol=0.0005 nstep=50 $end
- $contrl runtyp=OPTIMIZE maxit=200 $end
 
 ! Run COSMO on perfect conductor
  $COSGMS PRFCND=.TRUE. $end
