@@ -15,7 +15,7 @@ with open(sys.argv[1]) as fh:
 	for line in fh:
 		if line.startswith(" $HESS"):
 			hessactive = 1
-			hessblock.clear()
+			hessblock = []
 			hessblock.append(line)
 		elif line.startswith(" $END"):
 			if hessactive:
@@ -27,7 +27,7 @@ with open(sys.argv[1]) as fh:
 
 		if line.startswith(" COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)"):
 			dataactive = 1
-			datablock.clear()
+			datablock = []
 			datablock.append(" $DATA\n\n C1\n")
 		elif line.startswith("--- OPTIMIZED RHF"):
 			if dataactive:
