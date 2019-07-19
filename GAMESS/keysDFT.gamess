@@ -28,3 +28,8 @@
 
 ! available memory
  $SYSTEM MWORDS=125 $END
+
+! Internal Coordinates
+ $CONTRL nzvar=0 $END
+ $zmat dlc=.t. auto=.t. $END
+ 
