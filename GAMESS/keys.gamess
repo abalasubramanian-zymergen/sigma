@@ -14,5 +14,6 @@
  $statpt projct=.FALSE. $end
  $STATPT HESS=CALC HSSEND=.T. $END
  $STATPT NSTEP=1000 IFREEZ(1)=1,2,3 $END
- $STATPT DXMAX=0.1 TRUPD=.f. $end
- $pcm solvnt=WATER mxts=15000 smd=.T.  $end
+
+! available memory
+ $SYSTEM MWORDS=125 $END
