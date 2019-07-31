@@ -14,7 +14,7 @@
  $statpt projct=.FALSE. $end
  $STATPT HESS=CALC HSSEND=.T. $END
  $STATPT NSTEP=1000 IFREEZ(1)=1,2,3 $END
- $STATPT DXMAX=0.1 TRUPD=.f. $end
+! $STATPT DXMAX=0.1 TRUPD=.f. $end
 
 ! available memory
  $SYSTEM MWORDS=200 $END
