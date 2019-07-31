@@ -27,7 +27,7 @@
  $COSGMS COSRAD = 1.4 $end
 
 ! available memory
- $SYSTEM MWORDS=125 $END
+ $SYSTEM MWORDS=200 $END
 
 ! Internal Coordinates
  $CONTRL nzvar=0 $END
