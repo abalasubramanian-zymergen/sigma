@@ -7,7 +7,7 @@
 
 ! BASIS SETS
 ! KTZVP
- $BASIS GBASIS=PM6-D3H+ $END
+ $BASIS GBASIS=PM3 $END
 ! One of the following
  $guess guess=HUCKEL $end
 
