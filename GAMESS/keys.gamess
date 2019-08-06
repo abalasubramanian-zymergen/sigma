@@ -6,11 +6,12 @@
 
  $system timlim=100000 mwords=200 $end
  $SCF DIRSCF=.TRUE. $end
+ $STATPT OPTTOL=1.0E-5  $END
 
 ! BASIS SETS
 ! KTZVP
  $contrl ISPHER=1 $END
- $BASIS GBASIS=PM3 $END
+ $BASIS  GBASIS=STO NGAUSS=2 $END
 
 ! One of the following
  $guess guess=HUCKEL $end

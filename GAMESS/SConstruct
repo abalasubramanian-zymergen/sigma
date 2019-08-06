@@ -22,7 +22,7 @@ file.close()
 
 file = open(keys_0,'w')
 file.write(fileContents)
-file.write('\n! Internal Coordinates\n $CONTRL nzvar=1 $END\n $zmat dlc=.t. auto=.t. $END')
+# file.write('\n! Internal Coordinates\n $CONTRL nzvar=1 $END\n $zmat dlc=.t. auto=.t. $END')
 file.close()
 
 file = open(keys_p1,'w')
