@@ -58,12 +58,12 @@ files = []
 files_p1 = []
 files_m1 = []
 for fi in molfiles :
-	if str(fi).endswith("+1.mol") :
-		files_p1.append(fi)
-	elif str(fi).endswith("-1.mol") :
-		files_m1.append(fi)
-	else :
-		files.append(fi)
+	# if str(fi).endswith("+1.mol") :
+	# 	files_p1.append(fi)
+	# elif str(fi).endswith("-1.mol") :
+	# 	files_m1.append(fi)
+	# else :
+	files.append(fi)
 
 # Build all files for Gamess
 # Delete all DAT files, otherwise gamess will stop
