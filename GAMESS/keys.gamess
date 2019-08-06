@@ -20,8 +20,8 @@
  $STATPT IFREEZ(1)=1,2,3 $END
 
 ! Optimize the geometry with COSMO effects
- $statpt opttol=0.0005 nstep=50 $end
- $contrl runtyp=OPTIMIZE maxit=200 $end
+ $statpt opttol=0.0005 nstep=500 $end
+ $contrl runtyp=OPTIMIZE maxit=2000 $end
 
 ! Run COSMO on perfect conductor
  $COSGMS PRFCND=.TRUE. $end
