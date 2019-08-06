@@ -11,7 +11,7 @@
 ! BASIS SETS
 ! KTZVP
  $contrl ISPHER=1 $END
- $BASIS  GBASIS=STO NGAUSS=2 $END
+ $BASIS  GBASIS=N31 NGAUSS=6 ndfunc=2 npfunc=1 $END     
 
 ! One of the following
  $guess guess=HUCKEL $end
