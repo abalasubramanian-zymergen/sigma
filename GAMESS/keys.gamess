@@ -4,13 +4,13 @@
 ! THEORY: HF OR DFT
  $contrl mplevl=0 $end
 
- $system timlim=10000 mwords=20 $end
+ $system timlim=100000 mwords=200 $end
  $SCF DIRSCF=.TRUE. $end
 
 ! BASIS SETS
 ! KTZVP
  $contrl ISPHER=1 $END
- $BASIS GBASIS=KTZVP $END
+ $BASIS GBASIS=PM3 $END
 
 ! One of the following
  $guess guess=HUCKEL $end
@@ -29,4 +29,4 @@
  $COSGMS COSRAD = 1.4 $end
 
 ! available memory
- $SYSTEM MWORDS=40 $END
+ $SYSTEM MWORDS=200 $END
