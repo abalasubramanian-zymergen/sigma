@@ -19,7 +19,7 @@ $contrl scftyp=rhf $end
  $STATPT IFREEZ(1)=1,2,3 $END
 
 ! Optimize the geometry with COSMO effects
- $statpt opttol=0.0005 nstep=50 $end
+ $statpt opttol=0.0005 nstep=200 $end
  $contrl nzvar=1 $end
  $zmat dlc=.t. auto=.t. $end
  $contrl runtyp=OPTIMIZE maxit=200 $end
